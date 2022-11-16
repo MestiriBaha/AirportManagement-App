@@ -28,7 +28,8 @@ namespace AirportManagement.Domain
         [Required(ErrorMessage ="you should respect the length ")]
         public string firstName { get; set; }
         public string lastName { get; set; }
-        [[DataType(DataType.PhoneNumber)]
+        [Range(0,9)]
+        [DataType(DataType.PhoneNumber)]
 
         public int telNumber { get; set; }
         //many to many relation : 
